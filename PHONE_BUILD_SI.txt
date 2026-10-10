@@ -1,0 +1,18 @@
+PHONE එකෙන් APK එක හදාගන්න (Cloud Build)
+======================================
+
+වැදගත්: මේ ZIP එක APK එකක් නොවේ. GitHub server එකෙන් APK build කරගන්න source project එකයි.
+
+1. Chrome එකෙන් https://github.com/signup වෙත ගොස් account එකක් හදාගන්න. දැනට account එකක් තිබේ නම් sign in වෙන්න.
+2. GitHub හි New repository තෝරා QS-Rate-Finder-Pro නමින් repository එකක් හදන්න.
+3. මේ ZIP එක download කරලා Samsung phone එකේ My Files app එකෙන් Extract කරන්න.
+4. Extract කළ QSRateFinderAndroid folder එක ඇතුළට යන්න. එහි තිබෙන සියලුම files සහ folders repository එකට upload කරන්න (ZIP එක පමණක් upload කරන්න එපා).
+5. .github/workflows/build-apk.yml file එක upload වුණාද බලන්න. Mobile website එකෙන් hidden .github folder එක upload කරන්න බැරි නම් Chrome menu එකෙන් Desktop site තෝරන්න.
+6. Files upload කර commit කළ පසු repository එකේ Actions tab එකට යන්න.
+7. “Build QS Rate Finder APK” තෝරා Run workflow ඔබන්න. Build එකට මිනිත්තු කිහිපයක් ගත විය හැක.
+8. Build සාර්ථක වුණොත් run එක විවෘත කර Artifacts යටතේ QS-Rate-Finder-Pro-debug-apk download කරන්න.
+9. Download වූ ZIP එක extract කර app-debug.apk විවෘත කර install කරන්න. Android ඉල්ලුවොත් My Files/Chrome සඳහා Install unknown apps අවසරය දෙන්න.
+
+Build error එකක් ආවොත් Actions log එකේ error කොටසේ screenshot එක එවන්න.
+
+සටහන: මේක debug APK එකක්. Install කළ පසු camera, crop, OCR, PDF/Excel import සහ rate matching වෙන වෙනම පරීක්ෂා කළ යුතුයි. OCR/PDF/Excel සඳහා internet අවශ්‍ය විය හැක.
